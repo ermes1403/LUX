@@ -58,12 +58,10 @@ export default function Home() {
       {/* HERO SECTION */}
       <section className="relative h-[100svh] w-full flex items-center justify-center overflow-hidden">
         <motion.div style={{ scale: heroBgScale }} className="absolute inset-0 z-0">
-          <Image
+          <img
             src="/screenshot-hero.png"
             alt="Lux Lounge Bar Waterfront"
-            fill
-            className="object-cover brightness-[0.4]"
-            priority
+            className="w-full h-full object-cover brightness-[0.4]"
           />
         </motion.div>
         

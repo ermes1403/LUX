@@ -22,12 +22,10 @@ export function Navbar() {
       className="fixed top-0 left-0 right-0 z-50 h-28 px-6 md:px-12 flex items-center justify-between transition-all duration-500"
     >
       <Link href="/" className="relative h-16 w-40 md:w-56 transition-transform hover:scale-105 active:scale-95">
-        <Image
+        <img
           src="/logo.png"
           alt="Lux Lounge Bar"
-          fill
-          className="object-contain brightness-125"
-          priority
+          className="h-full w-full object-contain brightness-125"
         />
       </Link>
 
