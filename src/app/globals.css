@@ -9,6 +9,7 @@
   --color-primary: var(--primary);
   --color-neon: var(--neon);
   --color-neon-muted: var(--neon-muted);
+  --color-border: var(--border); /* Mappatura esplicita per Tailwind 4 */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   
@@ -22,22 +23,22 @@
 :root {
   --background: #050505;
   --foreground: #ffffff;
-  --primary: #ff1493; /* Deep Pink Neon */
+  --primary: #ff1493; 
   --neon: #ff1493;
   --neon-muted: #8b008b;
-  --border: rgba(255, 255, 255, 0.08);
+  --border: rgba(255, 255, 255, 0.1); /* Colore del bordo */
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
+  /* Rimosso @apply border-border che causava l'errore */
   html {
     scroll-behavior: initial !important;
     background: var(--background);
   }
   body {
-    @apply bg-background text-foreground antialiased selection:bg-neon/30 selection:text-white;
+    background-color: var(--background);
+    color: var(--foreground);
+    @apply antialiased selection:bg-neon/30 selection:text-white;
   }
 }
 

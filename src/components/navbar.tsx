@@ -12,12 +12,13 @@ const INSTAGRAM_URL = "https://www.instagram.com/lux.lounge.bar";
 export function Navbar() {
   const { scrollY } = useScroll();
   const backgroundColor = useTransform(scrollY, [0, 100], ["rgba(8, 8, 8, 0)", "rgba(8, 8, 8, 0.8)"]);
-  const backdropBlur = useTransform(scrollY, [0, 100], ["blur(0px)", "blur(24px)"]);
+  const blurValue = useTransform(scrollY, [0, 100], [0, 24]);
+  const backdropBlur = useTransform(blurValue, (v) => `blur(${v}px)`);
   const borderBottom = useTransform(scrollY, [0, 100], ["1px solid rgba(255, 255, 255, 0)", "1px solid rgba(255, 255, 255, 0.05)"]);
 
   return (
     <motion.nav 
-      style={{ backgroundColor, backdropBlur, borderBottom }}
+      style={{ backgroundColor, backdropFilter: backdropBlur, borderBottom }}
       className="fixed top-0 left-0 right-0 z-50 h-28 px-6 md:px-12 flex items-center justify-between transition-all duration-500"
     >
       <Link href="/" className="relative h-16 w-40 md:w-56 transition-transform hover:scale-105 active:scale-95">
