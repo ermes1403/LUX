@@ -59,7 +59,7 @@ export default function Home() {
       <section className="relative h-[100svh] w-full flex items-center justify-center overflow-hidden">
         <motion.div style={{ scale: heroBgScale }} className="absolute inset-0 z-0">
           <Image
-            src="/Screenshot 2026-04-11 165803.png"
+            src="/screenshot-hero.png"
             alt="Lux Lounge Bar Waterfront"
             fill
             className="object-cover brightness-[0.4]"
@@ -167,7 +167,7 @@ export default function Home() {
                 className={cn(imageContainerClass, "aspect-[3/4] md:aspect-square")}
               >
                 <Image
-                  src="/Screenshot 2026-04-11 165710.png"
+                  src="/screenshot-7.png"
                   alt="Interni Lux Lounge"
                   fill
                   className="object-cover transition-transform duration-1000 group-hover:scale-110"
@@ -237,7 +237,7 @@ export default function Home() {
               className={cn(imageContainerClass, "md:col-span-8")}
             >
               <Image
-                src="/Screenshot 2026-04-11 165516.png"
+                src="/screenshot-3.png"
                 alt="Lux Signature Drink"
                 width={1200}
                 height={800}
@@ -346,13 +346,13 @@ export default function Home() {
                 initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}
                 className={cn(imageContainerClass, "aspect-[4/5]")}
               >
-                <Image src="/Screenshot 2026-04-11 165129.png" alt="Gallery 1" fill className="object-cover group-hover:scale-110 transition-transform duration-1000" />
+                <Image src="/screenshot-1.png" alt="Gallery 1" fill className="object-cover group-hover:scale-110 transition-transform duration-1000" />
               </motion.div>
               <motion.div 
                 initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}
                 className={cn(imageContainerClass, "aspect-video")}
               >
-                <Image src="/Screenshot 2026-04-11 165658.png" alt="Gallery 4" fill className="object-cover group-hover:scale-110 transition-transform duration-1000" />
+                <Image src="/screenshot-6.png" alt="Gallery 4" fill className="object-cover group-hover:scale-110 transition-transform duration-1000" />
               </motion.div>
             </div>
             
@@ -361,13 +361,13 @@ export default function Home() {
                 initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
                 className={cn(imageContainerClass, "aspect-square")}
               >
-                <Image src="/Screenshot 2026-04-11 165148.png" alt="Gallery 2" fill className="object-cover group-hover:scale-110 transition-transform duration-1000" />
+                <Image src="/screenshot-2.png" alt="Gallery 2" fill className="object-cover group-hover:scale-110 transition-transform duration-1000" />
               </motion.div>
               <motion.div 
                 initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
                 className={cn(imageContainerClass, "aspect-[3/4]")}
               >
-                <Image src="/Screenshot 2026-04-11 165533.png" alt="Gallery 3" fill className="object-cover group-hover:scale-110 transition-transform duration-1000" />
+                <Image src="/screenshot-4.png" alt="Gallery 3" fill className="object-cover group-hover:scale-110 transition-transform duration-1000" />
               </motion.div>
             </div>
 
@@ -375,7 +375,7 @@ export default function Home() {
               initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ delay: 0.2 }}
               className={cn(imageContainerClass, "md:col-span-1 aspect-[4/10]")}
             >
-              <Image src="/Screenshot 2026-04-11 165610.png" alt="Gallery 5" fill className="object-cover group-hover:scale-110 transition-transform duration-1000" />
+              <Image src="/screenshot-5.png" alt="Gallery 5" fill className="object-cover group-hover:scale-110 transition-transform duration-1000" />
               <div className="absolute inset-0 flex items-center justify-center p-4">
                 <span className="text-white/20 text-3xl font-black italic tracking-tighter uppercase [writing-mode:vertical-rl] pointer-events-none group-hover:text-neon/30 transition-colors">PIZZO MARINA</span>
               </div>
@@ -424,7 +424,7 @@ export default function Home() {
                 className={cn(imageContainerClass, "aspect-square p-6 bg-white/[0.02]")}
               >
                 <div className="relative w-full h-full overflow-hidden border border-white/5">
-                  <Image src="/Screenshot 2026-04-11 165741.png" alt="Atmosphere" fill className="object-cover brightness-[0.4]" />
+                  <Image src="/screenshot-8.png" alt="Atmosphere" fill className="object-cover brightness-[0.4]" />
                   <div className="absolute inset-0 flex items-center justify-center p-8">
                     <div className="text-center p-12 border border-white/10 backdrop-blur-md w-full bg-black/20">
                       <span className="text-neon text-[10px] tracking-[0.6em] uppercase mb-10 block font-black neon-text-glow">Open Daily</span>

@@ -23,7 +23,7 @@ export function Navbar() {
     >
       <Link href="/" className="relative h-16 w-40 md:w-56 transition-transform hover:scale-105 active:scale-95">
         <Image
-          src="/Logo.png"
+          src="/logo.png"
           alt="Lux Lounge Bar"
           fill
           className="object-contain brightness-125"
