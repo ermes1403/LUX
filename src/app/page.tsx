@@ -145,7 +145,7 @@ export default function Home() {
                   Situato nel cuore della Marina di Pizzo, Lux Lounge Bar è il punto d'incontro tra design moderno e il suono delle onde.
                 </p>
                 <p className="text-white/80">
-                  Un rifugio esclusivo fronte mare dove ogni cocktail racconta una storia di ricerca e passione.
+                  Un rifugio esclusivo fronte mare dove ogni cocktail racconta una story di ricerca e passione.
                 </p>
                 <div className="pt-8">
                   <a href={GOOGLE_MAPS_URL} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-4 text-xs font-black tracking-[0.4em] uppercase text-white hover:text-neon transition-colors">
@@ -164,11 +164,10 @@ export default function Home() {
                 viewport={{ once: true }}
                 className={cn(imageContainerClass, "aspect-[3/4] md:aspect-square")}
               >
-                <Image
+                <img
                   src="/screenshot-7.png"
                   alt="Interni Lux Lounge"
-                  fill
-                  className="object-cover transition-transform duration-1000 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                 />
               </motion.div>
               <motion.div 
@@ -234,12 +233,10 @@ export default function Home() {
               viewport={{ once: true }}
               className={cn(imageContainerClass, "md:col-span-8")}
             >
-              <Image
+              <img
                 src="/screenshot-3.png"
                 alt="Lux Signature Drink"
-                width={1200}
-                height={800}
-                className="w-full transition-transform duration-1000 group-hover:scale-105"
+                className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
               />
             </motion.div>
             <div className="md:col-span-4 flex flex-col justify-center space-y-16 md:pl-16">
@@ -344,13 +341,13 @@ export default function Home() {
                 initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}
                 className={cn(imageContainerClass, "aspect-[4/5]")}
               >
-                <Image src="/screenshot-1.png" alt="Gallery 1" fill className="object-cover group-hover:scale-110 transition-transform duration-1000" />
+                <img src="/screenshot-1.png" alt="Gallery 1" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
               </motion.div>
               <motion.div 
                 initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}
                 className={cn(imageContainerClass, "aspect-video")}
               >
-                <Image src="/screenshot-6.png" alt="Gallery 4" fill className="object-cover group-hover:scale-110 transition-transform duration-1000" />
+                <img src="/screenshot-6.png" alt="Gallery 4" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
               </motion.div>
             </div>
             
@@ -359,13 +356,13 @@ export default function Home() {
                 initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
                 className={cn(imageContainerClass, "aspect-square")}
               >
-                <Image src="/screenshot-2.png" alt="Gallery 2" fill className="object-cover group-hover:scale-110 transition-transform duration-1000" />
+                <img src="/screenshot-2.png" alt="Gallery 2" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
               </motion.div>
               <motion.div 
                 initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
                 className={cn(imageContainerClass, "aspect-[3/4]")}
               >
-                <Image src="/screenshot-4.png" alt="Gallery 3" fill className="object-cover group-hover:scale-110 transition-transform duration-1000" />
+                <img src="/screenshot-4.png" alt="Gallery 3" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
               </motion.div>
             </div>
 
@@ -373,7 +370,7 @@ export default function Home() {
               initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ delay: 0.2 }}
               className={cn(imageContainerClass, "md:col-span-1 aspect-[4/10]")}
             >
-              <Image src="/screenshot-5.png" alt="Gallery 5" fill className="object-cover group-hover:scale-110 transition-transform duration-1000" />
+              <img src="/screenshot-5.png" alt="Gallery 5" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
               <div className="absolute inset-0 flex items-center justify-center p-4">
                 <span className="text-white/20 text-3xl font-black italic tracking-tighter uppercase [writing-mode:vertical-rl] pointer-events-none group-hover:text-neon/30 transition-colors">PIZZO MARINA</span>
               </div>
@@ -422,7 +419,7 @@ export default function Home() {
                 className={cn(imageContainerClass, "aspect-square p-6 bg-white/[0.02]")}
               >
                 <div className="relative w-full h-full overflow-hidden border border-white/5">
-                  <Image src="/screenshot-8.png" alt="Atmosphere" fill className="object-cover brightness-[0.4]" />
+                  <img src="/screenshot-8.png" alt="Atmosphere" className="w-full h-full object-cover brightness-[0.4]" />
                   <div className="absolute inset-0 flex items-center justify-center p-8">
                     <div className="text-center p-12 border border-white/10 backdrop-blur-md w-full bg-black/20">
                       <span className="text-neon text-[10px] tracking-[0.6em] uppercase mb-10 block font-black neon-text-glow">Open Daily</span>
