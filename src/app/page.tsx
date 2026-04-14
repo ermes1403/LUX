@@ -335,7 +335,7 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
             <div className="md:col-span-2 space-y-4 md:space-y-8">
               <motion.div 
                 initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}
@@ -365,16 +365,6 @@ export default function Home() {
                 <img src="/screenshot-4.png" alt="Gallery 3" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
               </motion.div>
             </div>
-
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ delay: 0.2 }}
-              className={cn(imageContainerClass, "md:col-span-1 aspect-[4/10]")}
-            >
-              <img src="/screenshot-5.png" alt="Gallery 5" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
-              <div className="absolute inset-0 flex items-center justify-center p-4">
-                <span className="text-white/20 text-3xl font-black italic tracking-tighter uppercase [writing-mode:vertical-rl] pointer-events-none group-hover:text-neon/30 transition-colors">PIZZO MARINA</span>
-              </div>
-            </motion.div>
           </div>
         </div>
       </section>
