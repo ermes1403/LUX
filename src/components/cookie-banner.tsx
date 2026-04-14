@@ -8,9 +8,10 @@ export function CookieBanner() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const consent = localStorage.getItem("cookie-consent");
+    const consent = typeof window !== 'undefined' ? localStorage.getItem("cookie-consent") : null;
     if (!consent) {
-      setIsVisible(true);
+      const timer = setTimeout(() => setIsVisible(true), 100);
+      return () => clearTimeout(timer);
     }
   }, []);
 
@@ -26,7 +27,7 @@ export function CookieBanner() {
       <div className="max-w-4xl mx-auto bg-background/95 backdrop-blur-xl border border-white/10 p-6 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6">
         <p className="text-xs text-white/60 leading-relaxed max-w-2xl text-center md:text-left font-light tracking-wide">
           Utilizziamo i cookie per migliorare la tua esperienza sul nostro sito. Continuando la navigazione, accetti la nostra 
-          <a href="#" className="text-gold underline ml-1">Privacy Policy</a> secondo il regolamento GDPR.
+          <a href="/privacy" className="text-neon underline ml-1">Privacy Policy</a> secondo il regolamento GDPR.
         </p>
         <button 
           onClick={acceptCookies}

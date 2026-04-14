@@ -1,15 +1,13 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
-import { motion, useScroll, useTransform, useInView } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { buttonVariants } from "@/components/ui/button";
 import { SectionLabel } from "@/components/section-label";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { CookieBanner } from "@/components/cookie-banner";
-import { Phone, ArrowUpRight, MapPin, Globe, Share, Star, Quote } from "lucide-react";
+import { Phone, ArrowUpRight, Star, Quote } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const INSTAGRAM_URL = "https://www.instagram.com/lux.lounge.bar";
@@ -89,7 +87,7 @@ export default function Home() {
               transition={{ delay: 1, duration: 1 }}
               className="max-w-2xl mx-auto text-sm md:text-lg text-white font-light tracking-[0.25em] uppercase leading-relaxed"
             >
-              L'eccellenza della mixology <br className="hidden md:block" /> a pochi passi dalle onde del mare.
+              L&apos;eccellenza della mixology <br className="hidden md:block" /> a pochi passi dalle onde del mare.
             </motion.p>
             
             <motion.div 
@@ -130,7 +128,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="editorial-grid items-center">
             <div className="md:col-span-6 space-y-12">
-              <SectionLabel className="text-neon/50">L'Identità</SectionLabel>
+              <SectionLabel className="text-neon/50">L&apos;Identità</SectionLabel>
               <h2 className="text-5xl md:text-8xl font-black tracking-tighter text-white leading-[0.9] uppercase italic">
                 <RevealText>PIÙ VICINO</RevealText>
                 <RevealText className="text-neon neon-text-glow">AL MARE.</RevealText>
@@ -142,7 +140,7 @@ export default function Home() {
                 className="space-y-8 text-muted-foreground text-lg md:text-2xl font-light leading-relaxed max-w-xl"
               >
                 <p>
-                  Situato nel cuore della Marina di Pizzo, Lux Lounge Bar è il punto d'incontro tra design moderno e il suono delle onde.
+                  Situato nel cuore della Marina di Pizzo, Lux Lounge Bar è il punto d&apos;incontro tra design moderno e il suono delle onde.
                 </p>
                 <p className="text-white/80">
                   Un rifugio esclusivo fronte mare dove ogni cocktail racconta una story di ricerca e passione.
@@ -284,7 +282,7 @@ export default function Home() {
                 <div className="flex gap-2 mb-8">
                   {[...Array(r.rating)].map((_, i) => <Star key={i} className="size-4 fill-neon text-neon" />)}
                 </div>
-                <p className="text-xl md:text-3xl text-white/90 font-light italic leading-relaxed mb-12">"{r.text}"</p>
+                <p className="text-xl md:text-3xl text-white/90 font-light italic leading-relaxed mb-12">&quot;{r.text}&quot;</p>
                 <div className="pt-8 border-t border-white/10">
                   <h4 className="text-white text-[10px] uppercase tracking-[0.5em] font-black">{r.name}</h4>
                 </div>
